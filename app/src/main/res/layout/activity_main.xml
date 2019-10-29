@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <include layout="@layout/title" />
 
@@ -11,20 +11,16 @@
         android:id="@+id/edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margin_"
-        android:layout_marginRight="@dimen/margin_"
-        android:textSize="@dimen/txt_size" />
+        android:textSize="15sp" />
 
     <ListView
         android:id="@+id/listview_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:cacheColorHint="@color/white"
-        android:divider="@drawable/line_background"
-        android:dividerHeight="@dimen/line_height"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="@android:color/white"
         android:paddingBottom="5dp" />
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package xp.speechrecognizer.com.speechrecognizer.speech.setting;
+package xp.speechrecognizer.com.speechrecognizerlib.speech.setting;
 
 import android.os.Bundle;
 import android.preference.EditTextPreference;
@@ -7,15 +7,15 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.view.Window;
 
-import xp.speechrecognizer.com.speechrecognizer.R;
-import xp.speechrecognizer.com.speechrecognizer.speech.util.SettingTextWatcher;
+import xp.speechrecognizer.com.speechrecognizerlib.R;
+import xp.speechrecognizer.com.speechrecognizerlib.speech.util.SettingTextWatcher;
 
 /**
  * 听写设置界面
  */
 public class IatSettings extends PreferenceActivity implements OnPreferenceChangeListener {
 	
-	public static final String PREFER_NAME = "xp.speechrecognizer.com.speechrecognizer.speech.setting";
+	public static final String PREFER_NAME = "xp.speechrecognizer.com.speechrecognizerlib.speech.setting";
 	private EditTextPreference mVadbosPreference;
 	private EditTextPreference mVadeosPreference;
 	

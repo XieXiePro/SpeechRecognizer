@@ -1,4 +1,4 @@
-package xp.speechrecognizer.com.speechrecognizer.speech.util;
+package xp.speechrecognizer.com.speechrecognizerlib.speech.util;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package xp.speechrecognizer.com.speechrecognizer;
+package xp.speechrecognizer.com.speechrecognizerlib;
 
 import android.app.Application;
 import com.iflytek.cloud.Setting;
