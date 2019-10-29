@@ -16,7 +16,7 @@
     <string name="pref_key_iat_show">iat_show</string>
     <string name="pref_title_iat_show">显示听写界面</string>
     <string name="text_show_contacts">上传联系人/词表显示</string>
-    <string name="text_show_iat_result">听写结果显示</string>
+    <string name="text_show_iat_result">点击输入</string>
 
     <string name="pref_key_translate">translate</string>
     <string name="pref_title_translate">翻译</string>

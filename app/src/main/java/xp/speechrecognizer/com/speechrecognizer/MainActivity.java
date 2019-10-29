@@ -109,22 +109,6 @@ public class MainActivity extends Activity implements OnClickListener {
         mToast.show();
     }
 
-    @Override
-    protected void onResume() {
-        // 开放统计 移动数据统计分析
-		/*FlowerCollector.onResume(MainActivity.this);
-		FlowerCollector.onPageStart(TAG);*/
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        // 开放统计 移动数据统计分析
-	/*	FlowerCollector.onPageEnd(TAG);
-		FlowerCollector.onPause(MainActivity.this);*/
-        super.onPause();
-    }
-
     private void requestPermissions() {
         try {
             if (Build.VERSION.SDK_INT >= 23) {

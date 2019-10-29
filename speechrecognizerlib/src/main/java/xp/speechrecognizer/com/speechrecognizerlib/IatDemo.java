@@ -35,7 +35,6 @@ import java.util.LinkedHashMap;
 import xp.speechrecognizer.com.speechrecognizerlib.speech.setting.IatSettings;
 import xp.speechrecognizer.com.speechrecognizerlib.speech.util.FucUtil;
 import xp.speechrecognizer.com.speechrecognizerlib.speech.util.JsonParser;
-/*import com.iflytek.sunflower.FlowerCollector;*/
 
 public class IatDemo extends Activity implements OnClickListener {
     private static String TAG = IatDemo.class.getSimpleName();
@@ -97,11 +96,8 @@ public class IatDemo extends Activity implements OnClickListener {
      * 初始化Layout。
      */
     private void initLayout() {
-        findViewById(R.id.iat_recognize).setOnClickListener(IatDemo.this);
-        findViewById(R.id.iat_recognize_stream).setOnClickListener(IatDemo.this);
-        findViewById(R.id.iat_stop).setOnClickListener(IatDemo.this);
-        findViewById(R.id.iat_cancel).setOnClickListener(IatDemo.this);
         findViewById(R.id.image_iat_set).setOnClickListener(IatDemo.this);
+        findViewById(R.id.iat_recognize).setOnClickListener(IatDemo.this);
     }
 
     int ret = 0; // 函数调用返回值
@@ -144,17 +140,6 @@ public class IatDemo extends Activity implements OnClickListener {
                     showTip(getString(R.string.text_begin));
                 }
             }
-        } else if (view.getId() == R.id.iat_recognize_stream) {
-            // 音频流识别
-            executeStream();
-        } else if (view.getId() == R.id.iat_stop) {
-            // 停止听写
-            mIat.stopListening();
-            showTip("停止听写");
-        } else if (view.getId() == R.id.iat_cancel) {
-            // 取消听写
-            mIat.cancel();
-            showTip("取消听写");
         }
     }
 
